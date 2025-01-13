@@ -1,13 +1,17 @@
 package org.example.game2;
 
 
-public class Box {
+import lombok.Getter;
+import lombok.ToString;
 
-    private String text; //질문, 설명
+@Getter
+@ToString
+public class Box {
+    private String text; //질문, 결과
     private int yesIndex; //yes 이동위치
     private int noIndex; //no 이동위치
 
-    //설명 + yes, no 없는 상자 4개
+    //결과(A,B,C,D) + yes, no 없는 상자 4개
     public Box(String text) {
         this.text = text;
     }
@@ -18,4 +22,5 @@ public class Box {
         this.yesIndex = yesIndex;
         this.noIndex = noIndex;
     }
+
 }

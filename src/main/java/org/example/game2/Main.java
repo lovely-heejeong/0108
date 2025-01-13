@@ -34,13 +34,15 @@ public class Main {
         int currentIndex = 0;
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("심리테스트를 시작하려면 ENTER");
+        scanner.nextLine();
+
+        //첫번째 문제 출력
+        Box firstBox = boxes.get(0);
+        System.out.println(firstBox.getText());
+
+
         while(true) {
-            System.out.println("심리테스트를 시작하려면 ENTER");
-            scanner.nextLine();
-
-            //첫번째 문제 출력
-
-
             System.out.println("YES 1, NO 2");
 
             //선택
@@ -61,7 +63,6 @@ public class Main {
 
             }
         }
-
 
 
 

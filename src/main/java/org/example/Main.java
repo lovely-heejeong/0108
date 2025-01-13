@@ -171,7 +171,7 @@ public class Main {
 
                 Tile dest = tiles.get(current);
 
-                //다시 해당 위치의 타일을 가져와서 출력해야 함
+                //다시 해당 위치의 타일을 가져와서 출력
                 System.out.println(dest);
 
             }
